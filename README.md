@@ -2,9 +2,9 @@
 
 ## What's Included
 
-**Full Talk Summaries:** 43 video summaries  
-**Technical Implementation Details:** Concrete guidance, examples, services mentioned, and actionable steps from each talk
-**Video Links:** Direct access to original presentations on YouTube
+- **Full Talk Summaries:** 43 video summaries  
+- **Technical Implementation Details:** Concrete guidance, examples, services mentioned, and actionable steps from each talk
+- **Video Links:** Direct access to original presentations on YouTube
 
 ## Table of Contents
 
