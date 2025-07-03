@@ -2,45 +2,77 @@
 
 **Video Link**: [Watch on YouTube](https://www.youtube.com/watch?v=AccsDqmHPdU)
 
-- **Author**: A Swap
-- **Talk Type**: Security
+- **Author**: Jeremy Snyder
+- **Talk Type**: AI/ML Security
 
 ## Summary
 
-This conference talk covers important technical concepts and practical implementations discussed by the speaker. The presentation includes detailed explanations of methodologies, tools, and real-world applications. Key insights and recommendations are provided for practitioners in the field.
+Jeremy Snyder explores the complex challenges organizations face when trying to log and monitor AI-as-a-Service (AIaaS) usage across their environments. With AI adoption surging—now the top C-suite spending priority as of Q1 2025—enterprises are rapidly deploying both workload (AI-powered applications) and workforce (employee-facing tools) use cases. However, this acceleration has outpaced security and observability efforts, leaving teams with little visibility into how and where AI is being used.
+
+Drawing from his team’s work with AWS Bedrock and other AI platforms, Snyder highlights deep inconsistencies in log formats, documentation, and guardrail behavior. The talk outlines how fragmented architectures, lack of standardization, and hidden system behaviors in AI platforms make it extremely difficult to centralize logging or detect misuse. Without significant effort to normalize and route logs, organizations risk repeating the same visibility and compliance failures seen in early cloud adoption.
 
 ## Key Points
 
-- Main technical concepts and methodologies discussed
-- Practical implementation strategies and best practices  
-- Tools and technologies recommended by the speaker
-- Real-world examples and case studies presented
-- Key challenges and solutions in the field
-- Important considerations for practitioners
+- **Two types of AI exposure**: Workload (AI-powered apps/agents) and Workforce (employee browser/tool usage)
+- **Log format sprawl**: 80-100+ permutations of model/provider/version combinations with inconsistent formats
+- **AWS Bedrock logging requires complex setup**: No CloudTrail-like service; must route through S3/CloudWatch + Lambda
+- **Hidden system prompts discovered**: Bedrock agents inject ~15+ hidden instructions (e.g., "Never disclose information about how your memory works") only visible in logs
+- **Inconsistent log boundaries**: Single log files may contain multiple user interactions with no clear delineation
+- **Cross-region processing**: Bedrock may process data across US regions unpredictably, challenging data sovereignty
+- **Guardrails are unreliable**: Different providers handle guardrails inconsistently (Amazon blocks, Anthropic returns "unknown", Cohere ignores)
+- **Pre-submission API calls**: LLM services start processing prompts and uploading files before users click submit
+- **Limited client-side visibility**: Browser plugins can capture prompts but struggle with response payloads and file contents
+- **Truncated endpoint logs**: Security tools like Zscaler truncate payloads, missing critical context
 
 ## Technical Details
 
-**Architecture Components:**
-- Core systems and infrastructure discussed
-- Integration patterns and design decisions
-- Scalability and performance considerations
+**Log Collection Architecture (AWS Bedrock):**
+- No native centralized logging service
+- Must configure CloudWatch Log Groups or S3 buckets per region/account
+- Use Lambda functions to aggregate and forward logs
+- Multiply complexity by number of AWS accounts × regions
 
-**Implementation Steps:**
-- Setup and configuration processes
-- Deployment strategies and workflows
-- Testing and validation approaches
+**Log Format Challenges:**
+- Raw JSON with escaped line breaks and special characters
+- Inconsistent metadata fields (stop_sequences, temperature, token counts)
+- Model-specific variations even within same provider
+- Documentation gaps (e.g., A21 Labs format undocumented)
 
-**Technologies and Tools:**
-- Primary platforms and services mentioned
-- Supporting tools and utilities
-- Monitoring and observability solutions
+**Bedrock Agent Log Structure:**
+- User input: Minimal (often <5% of log content)
+- System prompts: Large predefined blocks (~15+ hidden instructions)
+- Metadata: Lambda function details, execution paths
+- No clear session boundaries between interactions
 
-**Methodologies:**
-- Development and operational practices
-- Security and compliance approaches  
-- Optimization and maintenance strategies
+**Monitoring Approaches:**
 
----
+1. **Server-side (Workload)**:
+   - Direct API logs from Bedrock/Vertex/Azure
+   - Pros: Complete request/response data
+   - Cons: Format inconsistency, complex aggregation
+
+2. **Client-side (Workforce)**:
+   - Browser plugins for ChatGPT/Claude usage
+   - Pros: Easy deployment, captures user intent
+   - Cons: Limited response visibility, DOM security blocks
+
+**Key Guardrail Behaviors:**
+- Amazon Bedrock: Returns "content_filtered" message
+- Anthropic: Returns "unknown" status
+- Cohere: Silently processes blocked content (e.g., base64 payloads)
+
+**Data Processing Concerns:**
+- Cross-region processing within US (no control over specific region)
+- Pre-emptive file uploads before user submission
+- Multiple API calls generated from single user action
+- No consistent request/response correlation
+
+**Current Limitations:**
+- No security-focused audit roles from AI providers
+- Rapid API/format changes (daily/weekly)
+- Limited documentation focused on adoption over security
+- No standardization efforts across providers
+- Endpoint security tools truncate AI payloads
 
 ## Full Transcript
 
