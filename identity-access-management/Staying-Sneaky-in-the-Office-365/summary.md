@@ -2,7 +2,7 @@
 
 **Video Link**: [Watch on YouTube](https://www.youtube.com/watch?v=l5lpIF_QZCE)
 
-- **Author**: Christian Philipov (Reverent Security)
+- **Author**: Christian Philipov (Reversec)
 - **Talk Type**: Security
 
 ## Summary
